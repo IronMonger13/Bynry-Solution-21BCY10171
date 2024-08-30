@@ -1,0 +1,154 @@
+/* Root Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* App Container */
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Ensure elements are stacked vertically */
+}
+
+/* Heading */
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px; /* Adjusted margin */
+  color: inherit;
+  letter-spacing: 0.5px;
+}
+
+/* Search and Filter Container */
+.search-filter-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input {
+  width: calc(100% - 100px); /* Adjust width to make space for the filter button */
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-input:focus {
+  border-color: #007aff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 122, 255, 0.2);
+}
+
+.filter-button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #007aff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.filter-button:hover {
+  background: #005bb5;
+}
+
+.filter-input {
+  width: 90%;
+}
+
+/* Profile List */
+.profile-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.profile-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.profile-card h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Admin Panel Styling */
+.admin-panel {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Photo Preview */
+.photo-preview {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 600px) {
+  .App {
+    padding: 10px;
+  }
+
+  .profile-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-card img {
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}

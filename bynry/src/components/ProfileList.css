@@ -1,0 +1,68 @@
+/* Profile List Container */
+.profile-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between profile cards */
+    margin-top: 20px;
+  }
+  
+  /* Profile Card Styling */
+  .profile-card {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hover Effect */
+  .profile-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Profile Card Image */
+  .profile-card img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    object-fit: cover;
+  }
+  
+  /* Profile Card Info */
+  .profile-card .profile-info {
+    flex: 1;
+  }
+  
+  .profile-card h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .profile-card p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  /* Button Style */
+  .profile-card button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-card button:hover {
+    background-color: #0056b3;
+  }
+  
